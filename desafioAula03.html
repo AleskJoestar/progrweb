@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+  <style>
+    section {
+      background: white;
+      width: 378px;
+      height: 650px;
+      margin: auto;
+      text-align: center;
+      border-radius: 5%;
+      font-family: "Red Hat Display", sans-serif;
+    }
+
+    .card {
+      border-radius: 3%;
+      background-color: hsl(225, 100%, 98%);
+      margin: 2% 3% 2% 3%;
+      padding: 2%;
+      font-family: "Red Hat Display", sans-serif;
+      display: flex;
+      align-items: center;
+    }
+
+    #textomeio {
+      color: hsl(0, 0%, 51%);
+    }
+
+    body {
+      background: hsl(225, 100%, 98%);
+      background-image: url('https://github.com/WandersonMaikon/programacao_web_I/blob/main/Aula_3/Desafio/images/pattern-background-desktop.svg?raw=true');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+
+    }
+
+    #imagemdoida {
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+
+    #iconemusica {
+      width: 50px;
+      height: 50px;
+      margin: 0px 20px;
+    }
+
+
+    #botao1 {
+      font-family: "Red Hat Display", sans-serif;
+      border: 0;
+      background-color: blue;
+      color: white;
+      padding: 3%;
+      width: 82%;
+      border-radius: 10px 10px 10px 10px;
+      text-align: center;
+      font-size: 90%;
+      box-shadow: hsl(227, 89%, 90%) 0px 18px 18px 0px;
+    }
+
+    #botao2 {
+      font-family: "Red Hat Display", sans-serif;
+      border: 0;
+      color: hsl(0, 0%, 51%);
+      background-color: transparent;
+
+    }
+
+    #botao3 {
+      border: 0;
+      font-family: "Red Hat Display", sans-serif;
+      color: hsl(223, 81%, 39%);
+      margin: 15px 14px 15px;
+      margin-left: 16%;
+      background-color: transparent;
+    }
+    .teste{
+      padding-top: 80px;
+    }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="./style-index.css">
+
+</head>
+
+<body>
+  <!--<img id="fundo" src="https://github.com/WandersonMaikon/programacao_web_I/blob/main/Aula_3/Desafio/images/pattern-background-desktop.svg?raw=true" alt="fundo" width="132%" height="auto">-->
+
+  <div class="teste">
+    <section>
+      <img id="imagemdoida"
+        src="https://github.com/WandersonMaikon/programacao_web_I/blob/main/Aula_3/Desafio/images/illustration-hero.svg?raw=true"
+        alt="Imagem música" width="auto" height="185">
+      <h1>Resumo do pedido</h1>
+
+      <p id="textomeio">
+        Agora você pode ouvir milhões de músicas, audiolivros e podcasts em qualquer dispositivo em qualquer lugar que
+        você quiser!
+      </p>
+
+      <footet></footet>
+      <div class="card">
+        <img id="iconemusica"
+          src="https://github.com/WandersonMaikon/programacao_web_I/blob/main/Aula_3/Desafio/images/icon-music.svg?raw=true"
+          alt="Icone de música" widh="60" height="auto">
+        <p><b>Plano Anual</b><br />
+          US$ 59,99/ano</p> <button id="botao3"><b>Mudar</b></button>
+      </div>
+      <br />
+
+      <button id="botao1"><b>Prossiga para o Pagamento</b></button><br /><br /><br />
+
+      <button id="botao2"><b>Cancelar Pedido</b></button>
+    </section>
+  </div>
+</body>
+
+</html>
